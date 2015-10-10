@@ -1,0 +1,33 @@
+{
+    "counter": 0,
+    "response": {
+        "msg": "Success",
+        "status": true
+    },
+    "result": [
+        {
+            "docdate": "2015-07-21T21:00:00",
+            "docid": "55aec0ccc49c107d3f0000d7",
+            "doctitle": "Q3 2015 Apple Inc Earnings Call",
+            "quarter": "Q3 2015",
+            "quarter_begin": 1427760000000.0,
+            "quarter_end": 1435622400000.0
+        },
+        {
+            "docdate": "2015-04-27T21:00:00",
+            "docid": "553eb18dc49c1038670005eb",
+            "doctitle": "Q2 2015 Apple Inc Earnings Call",
+            "quarter": "Q2 2015",
+            "quarter_begin": 1419984000000.0,
+            "quarter_end": 1427760000000.0
+        },
+        {
+            "docdate": "2015-01-27T22:00:00",
+            "docid": "54c818e8c49c1061e100007e",
+            "doctitle": "Q1 2015 Apple Inc Earnings Call",
+            "quarter": "Q1 2015",
+            "quarter_begin": 1412035200000.0,
+            "quarter_end": 1419984000000.0
+        }
+]
+}
