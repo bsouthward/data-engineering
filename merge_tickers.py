@@ -10,14 +10,14 @@ def read_to_pd(ticker):
 	
 	# json ticker data; saving in separate variables in case it's useful later
 	t_data = json.loads(t)["result"]["docs"]
-	tq_data = json.loads(t)["result"]
+	tq_data = json.loads(t)["result"]["docs"]
 
 	# pandas dataframes made from the ticker data
 	t_pd = pd.DataFrame(t_data)
 	tq_pd = pd.DataFrame(tq_data)
 
 	# merge the dataframes using the function below
-	result = merge_json (t_pd, tq_pd))
+	result = merge_json(t_pd, tq_pd)
 
 	return result
 
