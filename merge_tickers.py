@@ -40,7 +40,14 @@ def pd_to_json(result):
 	# convert dataframes back into json; might be useful later
 	return pd.DataFrame.to_json(result)
 
+def check_dupes(dfs):
+	return pd.DataFrame.duplicated(concat_pd(dfs[0],dfs[1]), subset="id")
+
 if __name__ == '__main__':
 	for ticker in sys.argv[1:]:
+		# print merged dataframe
 		print(combine_pd(ticker))
+		# print number of duplicates in concatenated DFs
+		print("\nDuplicates: ")
+		print(check_dupes(read_to_pd(ticker)).sum())
 		#print(merge_pd(read_to_pd(ticker)))
